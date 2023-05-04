@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(to bottom, rgb(65, 62, 62), black);
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    display: inline;
+    padding: 0px;
+}
+
+.content {
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 0px;
+    width: auto;
+    height: auto;
+    
+}
+
+.content-about {
+    display: block;
+    font-family: serif;
+    text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content-about h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    font-size: 30px;
+}
+
+.social-medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
