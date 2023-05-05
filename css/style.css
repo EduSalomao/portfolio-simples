@@ -1,6 +1,8 @@
 body {
-    background: linear-gradient(to bottom, rgb(65, 62, 62), black);
+    background-image: url("../images/testebackground.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     margin: 0;
 }
 
@@ -16,6 +18,7 @@ body {
     justify-content: center;
     padding: 50px;
     padding-bottom: 0px;
+    padding-top: 150px;
     width: auto;
     height: auto;
     
@@ -27,17 +30,38 @@ body {
     text-shadow: -1px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
-.content-about h1, h2 {
+.content-about h1, #about {
     display: flex;
     justify-content: center;
 }
 
-p {
-    font-size: 30px;
+h1 {
+    font-size: 45px;
+}
+
+#about {
+    font-size: 32px;
 }
 
 .social-medias {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+}
+
+.social-medias ul li:hover {
+    transform: scale(1.25);
+    background-position: -60px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
 }

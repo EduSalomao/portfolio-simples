@@ -1,6 +1,6 @@
 a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 .container-menu {
@@ -11,6 +11,8 @@ a {
     padding: 0px;
     margin: 0px;
     height: 64px;
+    opacity: 0.7;
+    box-shadow: 0 7px 12px rgb(0, 0, 0);
 }
 
 .name {
@@ -19,6 +21,8 @@ a {
     font-size: 20px;
     padding-left: 20px;
     font-size: 20px;
+    opacity: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .ul-options {
@@ -28,13 +32,18 @@ a {
     height: auto;
     margin: 0px;
     padding: 0px;
+    padding-right: 20px;
+    
 }
 
 .ul-options li {
     padding: 6px;
     padding-left: 10px; padding-right: 10px;
     font-size: 20px;
-    font-family: Helvetica, arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 1;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
 }
 
 .menu-button {
@@ -42,6 +51,13 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.ul-options li:hover {
+    color: brown;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 600px) {
     #menu {
