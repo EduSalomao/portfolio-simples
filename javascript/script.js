@@ -1,5 +1,5 @@
 function createStars() {
-  const numStars = 100; // Defina o número de estrelas desejado
+  const numStars = 50; // Defina o número de estrelas desejado
   const minAnimationDuration = 10; // Duração mínima da animação em segundos
   const maxAnimationDuration = 20; // Duração máxima da animação em segundos
 
@@ -15,8 +15,8 @@ function createStars() {
 }
 
 function getRandomDuration() {
-  const minDuration = 8;
-  const maxDuration = 15;
+  const minDuration = 3;
+  const maxDuration = 8;
   return Math.floor(Math.random() * (maxDuration - minDuration + 1) + minDuration);
 }
 

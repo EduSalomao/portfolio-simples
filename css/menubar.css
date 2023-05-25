@@ -127,6 +127,7 @@ header.opaque {
 
 .toggle-button.on .ball {
     transform: translateX(100%);
+    background-color: black;
 }
 
 .toggle-button.off .ball {
