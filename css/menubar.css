@@ -16,7 +16,7 @@ header {
 }
 
 header.opaque {
-    background-color: rgb(33, 38, 97); /* Define uma cor de fundo opaca */
+    background-color: #5F1EDE; /* Define uma cor de fundo opaca */
 }
 
 .ul-options a {
