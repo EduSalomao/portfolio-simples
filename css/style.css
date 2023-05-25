@@ -7,16 +7,13 @@ body {
 
 .container {
     display: inline;
-    padding: 0px;
+    padding: 0;
     overflow: hidden;
 }
 
 .container-desc {
     background-color: #fff;
     padding: 20px;
-}
-
-.container-desc {
     background-image: linear-gradient(black, #040620);
     color: #ffffff;
     display: block;
@@ -28,10 +25,9 @@ body {
     width: auto;
     height: auto;
     z-index: 1;
-    
 }
 
-.container-desc .on {
+.container-desc.on {
     background-color: #ca2727;
 }
 
@@ -40,7 +36,8 @@ body {
     font-family: serif;
 }
 
-.content-about h1, #about {
+.content-about h1,
+#about {
     display: flex;
     justify-content: center;
 }
@@ -48,17 +45,13 @@ body {
 h1 {
     font-size: 45px;
     margin-bottom: 10px;
-    text-shadow: 
-        1px 1px 1px rgb(255, 255, 250), 
-        0px 2px 5px rgba(255, 255, 250, 0.425);
+    text-shadow: 1px 1px 1px rgb(255, 255, 250), 0px 2px 5px rgba(255, 255, 250, 0.425);
 }
 
 #about {
     font-size: 32px;
     color: #5F1EDE;
-    text-shadow: 
-        1px 1px 1px #6621ee, 
-        0px 2px 5px rgba(255, 255, 250, 0.425);
+    text-shadow: 1px 1px 1px #6621ee, 0px 2px 5px rgba(255, 255, 250, 0.425);
 }
 
 .social-medias {
@@ -66,12 +59,6 @@ h1 {
     align-items: center;
     justify-content: center;
     padding-top: 10px;
-    
-}
-
-#social {
-    padding: 0px;
-    
 }
 
 .social-medias ul li {
@@ -107,9 +94,7 @@ h1 {
     padding: 20px;
     border-radius: 5px;
     border: 5px solid #a5a69285;
-
 }
-
 
 @media screen and (max-width: 600px) {
     #about {
@@ -130,11 +115,16 @@ h1 {
     animation: twinkling infinite;
     z-index: 1;
 }
-  
+
 @keyframes twinkling {
-    0% { opacity: 0; }
-    10% { opacity: 1;
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
         box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.527);
     }
-    100% { opacity: 0; }
+    100% {
+        opacity: 0;
+    }
 }

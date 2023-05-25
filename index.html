@@ -11,63 +11,61 @@
     <link rel="stylesheet" href="css/profilepic.css">
     <link rel="stylesheet" href="css/mobile/responsivemenubar.css">
 
-    <header>
-            <div class="container-menu">
-                <div class="button">
-                    <button id="hamburgerButton" class="hamburger-button" onclick="toggleMenu()">
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                    </button>
-                </div>
-                <div class="name">
-                    <a href="index.html" type="internal" target="_self"><span>Eduardo Salomão</span></a>
-                </div>
-                
-                <div id="dropdownMenu" class="dropdown-menu">
-                    <div class="options">
-                        <div id="sidebarMenu" class="sidebar-menu">
-                            <li><a href="" type="internal" target="_self"><span>About</span></a></li>
-                            <li><a href="" type="internal" target="_self"><span>Tech</span></a></li>
-                            <li><a href="" type="internal" target="_self"><span>Social</span></a></li>
-                        </div>
-                        
-                        <ul class="ul-options" id="menu">
-                            <li><a href="" type="internal" target="_self"><span>About</span></a></li>
-                            <li><a href="" type="internal" target="_self"><span>Tech</span></a></li>
-                            <li><a href="" type="internal" target="_self"><span>Social</span></a></li>
-                        </ul>
-                        
-                    </div>
-                </div>
-                <div class="button-theme">
-                    <div id="toggleButton" class="toggle-button off" onclick="toggleSwitch()">
-                        <div class="ball"></div>
-                        <div class="status"></div>
-                    </div>
-                </div>
-                
-            </div>
-        </header>
-
+    <script src="javascript/script.js" defer></script>
 </head>
 <body>
+    <header>
+        <div class="container-menu">
+            <div class="button">
+                <button id="hamburgerButton" class="hamburger-button" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </button>
+            </div>
+            <div class="name">
+                <a href="index.html" type="internal" target="_self"><span>Eduardo Salomão</span></a>
+            </div>
+            
+            <div id="dropdownMenu" class="dropdown-menu">
+                <div class="options">
+                    <div id="sidebarMenu" class="sidebar-menu">
+                        <a href="" type="internal" target="_self"><span>About</span></a>
+                        <a href="" type="internal" target="_self"><span>Tech</span></a>
+                        <a href="" type="internal" target="_self"><span>Social</span></a>
+                    </div>
+                    
+                    <ul class="ul-options" id="menu">
+                        <li><a href="" type="internal" target="_self"><span>About</span></a></li>
+                        <li><a href="" type="internal" target="_self"><span>Tech</span></a></li>
+                        <li><a href="" type="internal" target="_self"><span>Social</span></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="button-theme">
+                <div id="toggleButton" class="toggle-button off" onclick="toggleSwitch()">
+                    <div class="ball"></div>
+                    <div class="status"></div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="container">
         <main>
             <section>
                 <div class="container-desc">
-                    
                     <div class="content-image">
                         <picture>
                             <div class="image"><img src="images/developerpicture.jpeg" alt="image of developer"></div>
-                            </div>
                         </picture>
+                    </div>
                     <div class="content-about">
                         <h1>Eduardo Salomão</h1>
                         <span id="about">Student & Developer</span>
                     </div>
-    
+
                     <div class="social-medias">
                         <ul class="ul-options" id="social">
                             <li><abbr title="GitHub"><a href="https://github.com/EduSalomao" type="external" target="_blank"><img src="images/icons8-github-30.png" alt="Github icon"></a></abbr></li>
@@ -77,9 +75,6 @@
                 </div>
             </section>
         </main>
-            
     </div>
-
-    <script src="javascript/script.js"></script>
 </body>
 </html>
