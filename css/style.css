@@ -23,6 +23,7 @@ body {
     padding-top: 150px;
     width: auto;
     height: auto;
+    z-index: 1;
     
 }
 
@@ -123,6 +124,7 @@ h1 {
     background-color: #fff;
     border-radius: 50%;
     animation: twinkling infinite;
+    z-index: 1;
 }
   
 @keyframes twinkling {
