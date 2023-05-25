@@ -11,6 +11,10 @@ body {
     overflow: hidden;
 }
 
+.container-desc {
+    background-color: #fff;
+    padding: 20px;
+}
 
 .container-desc {
     background-image: linear-gradient(black, #040620);
@@ -25,6 +29,10 @@ body {
     height: auto;
     z-index: 1;
     
+}
+
+.container-desc .on {
+    background-color: #ca2727;
 }
 
 .content-about {
@@ -103,10 +111,6 @@ h1 {
 }
 
 
-
-
-
-
 @media screen and (max-width: 600px) {
     #about {
         font-size: 22px;
@@ -129,6 +133,8 @@ h1 {
   
 @keyframes twinkling {
     0% { opacity: 0; }
-    50% { opacity: 1; }
+    10% { opacity: 1;
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.527);
+    }
     100% { opacity: 0; }
 }

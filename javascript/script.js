@@ -15,8 +15,8 @@ function createStars() {
   }
   
   function getRandomDuration() {
-    const minDuration = 10;
-    const maxDuration = 20;
+    const minDuration = 8;
+    const maxDuration = 15;
     return Math.floor(Math.random() * (maxDuration - minDuration + 1) + minDuration);
   }
   
@@ -31,4 +31,25 @@ window.addEventListener('scroll', function() {
       header.classList.remove('opaque');
     }
 });
-  
+
+function toggleSwitch() {
+  var toggleButton = document.getElementById("toggleButton");
+  var statusText = toggleButton.querySelector(".status");
+  var containerDesc = document.querySelector(".container-desc");
+
+  if (toggleButton.classList.contains("off")) {
+      toggleButton.classList.remove("off");
+      toggleButton.classList.add("on");
+      statusText.textContent = "";
+      containerDesc.classList.add("on");
+  } else {
+      toggleButton.classList.remove("on");
+      toggleButton.classList.add("off");
+      containerDesc.classList.remove("on");
+  }
+}
+
+function toggleMenu() {
+  var sidebarMenu = document.getElementById("sidebarMenu");
+  sidebarMenu.classList.toggle("active");
+}

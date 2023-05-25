@@ -4,6 +4,10 @@ a {
     
 }
 
+.name {
+    cursor: pointer;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -65,7 +69,8 @@ header.opaque {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     opacity: 1;
     transform: scale(0.8);
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
+    position: relative;
     
 }
 
@@ -74,28 +79,157 @@ header.opaque {
 }
 
 .menu-button {
-    display: none;
+    width: 30px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    padding: 0;
 }
 
-.ul-options li:hover {
+#menu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: #5F1EDE;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu li:hover {
     transform: scale(1.1);
     cursor: pointer;
 }
+#menu li:hover::after {
+    transform: scaleX(1);
+}
 
 
-@media screen and (max-width: 600px) {
-    #menu {
-      display: none;
+
+
+.toggle-button {
+    width: 50px;
+    height: 30px;
+    background-color: #33323273;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.toggle-button .ball {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.toggle-button.on {
+    background-color: #ffffffd3;
+
+    .container-desc {
+        background-image: linear-gradient(white, #040620);
     }
 
-    .container {
-        justify-content: end;
+    .ball {
+        background-color: black;
     }
+}
 
-    .menu-button {
-        display: flex;
-        padding: 15px
-    }
+.toggle-button.on .ball {
+    transform: translateX(100%);
+}
+
+.toggle-button.off .ball {
+    transform: translateX(0%);
+}
+
+.button {
+    padding-left: 10px;
+    display: none;
+}
+
+.button-theme {
+    padding-right: 15px;
+}
+
+.hamburger-button {
+    width: 30px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.hamburger-button .bar {
+    
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hamburger-button:hover .bar {
+    background-color: #f7f8fa;
+}
+
+.hamburger-button.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-button.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.hamburger-button.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+/* Estilos para o menu dropdown */
+.sidebar-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: -200px; /* Inicialmente, o menu está escondido */
+    width: 150px;
+    height: 100%;
+    background-color: rgba(51, 47, 47, 0.692);
+    transition: left 0.3s ease-in-out;
+    box-shadow: 0px 10px 10px white;
+}
+
+.sidebar-menu.active {
+    left: 0; /* Quando o menu está ativo, ele é mostrado */
+}
+
+.sidebar-menu li {
+    display: flex;
+    width: auto;
+    height: 50px;
+    list-style: none;
+    justify-content: center;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    color: white;
 }

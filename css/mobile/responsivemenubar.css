@@ -1,0 +1,22 @@
+@media screen and (max-width: 600px) {
+    .name {
+        padding-left:  10px;
+    }
+
+    #menu {
+      display: none;
+    }
+
+    .container {
+        justify-content: end;
+    }
+
+    .button {
+        display: flex;
+        padding: 15px
+    }
+
+    .sidebar-menu {
+        display: block;
+    }
+}

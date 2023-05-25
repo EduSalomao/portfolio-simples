@@ -9,20 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menubar.css">
     <link rel="stylesheet" href="css/profilepic.css">
+    <link rel="stylesheet" href="css/mobile/responsivemenubar.css">
 
     <header>
             <div class="container-menu">
-                <div class="menu-button"><a href="#">M</a></div>
+                <div class="button">
+                    <button id="hamburgerButton" class="hamburger-button" onclick="toggleMenu()">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button>
+                </div>
                 <div class="name">
                     <a href="index.html" type="internal" target="_self"><span>Eduardo Salomão</span></a>
                 </div>
-                <div class="options">
-                    <ul class="ul-options" id="menu">
-                        <li><a href="templates/aboutpage.html" type="internal" target="_self"><span>About</span></a></li>
-                        <li><a href="templates/techpage.html" type="internal" target="_self"><span>Tech</span></a></li>
-                        <li><a href="templates/socialpage.html" type="internal" target="_self"><span>Social</span></a></li>
-                    </ul>
+                
+                <div id="dropdownMenu" class="dropdown-menu">
+                    <div class="options">
+                        <div id="sidebarMenu" class="sidebar-menu">
+                            <li><a href="templates/aboutpage.html" type="internal" target="_self"><span>About</span></a></li>
+                            <li><a href="templates/techpage.html" type="internal" target="_self"><span>Tech</span></a></li>
+                            <li><a href="templates/socialpage.html" type="internal" target="_self"><span>Social</span></a></li>
+                        </div>
+                        
+                        <ul class="ul-options" id="menu">
+                            <li><a href="templates/aboutpage.html" type="internal" target="_self"><span>About</span></a></li>
+                            <li><a href="templates/techpage.html" type="internal" target="_self"><span>Tech</span></a></li>
+                            <li><a href="templates/socialpage.html" type="internal" target="_self"><span>Social</span></a></li>
+                        </ul>
+                        
+                    </div>
                 </div>
+                <div class="button-theme">
+                    <div id="toggleButton" class="toggle-button off" onclick="toggleSwitch()">
+                        <div class="ball"></div>
+                        <div class="status"></div>
+                    </div>
+                </div>
+                
             </div>
         </header>
 
@@ -46,9 +70,7 @@
     
                     <div class="social-medias">
                         <ul class="ul-options" id="social">
-                            <li><abbr title="Facebook"><a href="https://www.facebook.com/eduardo.oliveirasalomao/" type="external" target="_blank"><img src="images/icons8-facebook-30.png" alt="Facebook icon"></a></abbr></li>
                             <li><abbr title="GitHub"><a href="https://github.com/EduSalomao" type="external" target="_blank"><img src="images/icons8-github-30.png" alt="Github icon"></a></abbr></li>
-                            <li><abbr title="Instagram"><a href="https://www.instagram.com/edusalomaoo/" type="external" target="_blank"><img src="images/icons8-instagram-30.png" alt="Instagram icon"></a></abbr></li>
                             <li><abbr title="LinkedIn"><a href="https://www.linkedin.com/in/eduardo-oliveira-salomão-15347922a/" type="external" target="_blank"><img src="images/icons8-linkedin-30.png" alt="LinkedIn icon"></a></abbr></li>
                         </ul>
                     </div>
