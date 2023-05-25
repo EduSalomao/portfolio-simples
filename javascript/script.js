@@ -1,5 +1,5 @@
 function createStars() {
-    const numStars = 200; // Defina o número de estrelas desejado
+    const numStars = 100; // Defina o número de estrelas desejado
     const minAnimationDuration = 10; // Duração mínima da animação em segundos
     const maxAnimationDuration = 20; // Duração máxima da animação em segundos
   
