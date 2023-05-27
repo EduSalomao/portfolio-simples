@@ -1,7 +1,5 @@
 function createStars() {
-  const numStars = 50; // Defina o número de estrelas desejado
-  const minAnimationDuration = 10; // Duração mínima da animação em segundos
-  const maxAnimationDuration = 20; // Duração máxima da animação em segundos
+  const numStars = 30; // Defina o número de estrelas desejado
 
   for (let i = 0; i < numStars; i++) {
     const star = document.createElement('div');
@@ -15,11 +13,26 @@ function createStars() {
 }
 
 function getRandomDuration() {
-  const minDuration = 3;
-  const maxDuration = 8;
-  return Math.floor(Math.random() * (maxDuration - minDuration + 1) + minDuration);
+  const minDuration = 0.2;
+  const maxDuration = 0.5;
+  return (Math.random() * 0.2) + 0.3;
 }
 
+function createPlanet() {
+  const numPlanet = 12;
+
+  for (let i =0; i < numPlanet; i++) {
+    const planet = document.createElement('div');
+    planet.classList.add('planet');
+    planet.style.left = `${Math.random() * 100}%`;
+    planet.style.top = `${Math.random() * 100}%`;
+    
+    document.body.appendChild(planet);
+
+  }
+}
+
+createPlanet();
 createStars();
 
 window.addEventListener('scroll', function() {

@@ -114,20 +114,24 @@ h1 {
     border-radius: 50%;
     animation: twinkling infinite;
     z-index: 1;
+    opacity: 1;
 }
 
+.planet {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0px 0px 100px white;
+}
+
+
 @keyframes twinkling {
-    0% {
-        opacity: 0;
-    }
-    10% {
+    50% {
         opacity: 1;
-        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.527);
-    }
-    95% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
+        scale: 1.4;
+        box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.466);
     }
 }
