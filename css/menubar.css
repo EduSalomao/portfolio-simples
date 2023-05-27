@@ -20,6 +20,7 @@ header {
     height: 60px;
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 1s ease;
+    z-index: 1;
 }
 
 header.opaque {
@@ -140,7 +141,7 @@ header.opaque {
 }
 
 .button-theme {
-    padding-right: 15px;
+    padding-right: 20px;
 }
 
 .hamburger-button {
@@ -181,6 +182,7 @@ header.opaque {
 }
 
 /* Estilos para o menu dropdown */
+
 .sidebar-menu {
     display: none;
     position: fixed;
@@ -205,3 +207,4 @@ header.opaque {
     align-items: center;
     color: white;
 }
+    

@@ -20,5 +20,13 @@
         display: block;
     }
 
+    #about {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
 }
 
