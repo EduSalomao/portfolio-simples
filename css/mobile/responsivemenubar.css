@@ -1,4 +1,7 @@
 @media screen and (max-width: 600px) {
+    header:focus {
+        outline: none;
+    }
     .name {
         padding-left:  10px;
     }

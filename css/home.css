@@ -5,22 +5,29 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------------------------------------------------- */
+
 .container {
     display: inline;
     padding: 0;
     overflow: hidden;
 }
 
+/* ------------------------------------------------------------- */
 .container-desc {
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    padding: 20px;
     background-image: linear-gradient(black, #040620);
     color: #ffffff;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    padding-bottom: 500px;
+    padding: 25%;
+    padding-bottom: 350px;
     padding-top: 150px;
     width: auto;
     height: auto;
@@ -31,71 +38,6 @@ canvas {
     display: block;
 }
 
-.content-about {
-    display: block;
-    font-family: serif;
-}
-
-.content-about h1,
-#about {
-    display: flex;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 250), 0px 2px 5px rgba(255, 255, 250, 0.425);
-}
-
-#about {
-    font-size: 32px;
-    color: #5F1EDE;
-    text-shadow: 1px 1px 1px #6621ee, 0px 2px 5px rgba(255, 255, 250, 0.425);
-}
-
-.social-medias {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-.social-medias ul li {
-    background-color: transparent;
-}
-
-.social-medias ul li img {
-    filter: drop-shadow(0 5px 5px rgba(255, 255, 255, 0.342));
-}
-
-.social-medias ul li:hover {
-    transform: scale(1.25);
-    background-position: -60px;
-}
-
-.desc {
-    background-color: #025E73;
-    text-align: justify;
-    padding-top: 10px;
-    padding-right: 25%;
-    padding-left: 25%;
-    font-size: 25px;
-    padding-bottom: 200px;
-}
-
-.desc h1 {
-    text-align: center;
-    color: #feffe4;
-}
-
-#info {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    border: 5px solid #a5a69285;
-}
-
 #starCanvas {
     position: absolute;
     top: 0;
@@ -104,3 +46,38 @@ h1 {
     width: 100%;
 
 }
+
+.content-about {
+    display: block;
+    text-align: center;
+    font-family: serif;
+}
+
+.content-about h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 250), 0px 2px 5px rgba(255, 255, 250, 0.425);
+}
+
+.content-about span {
+    font-size: 32px;
+    color: #5F1EDE;
+    text-shadow: 1px 1px 1px #6621ee, 0px 2px 5px rgba(255, 255, 250, 0.425);
+}
+
+.social-medias {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.social-medias li {
+    background-color: transparent;
+}
+
+.social-medias li:hover {
+    transform: scale(1.25);
+    background-position: -60px;
+}
+
+/* ------------------------------------------------------------- */

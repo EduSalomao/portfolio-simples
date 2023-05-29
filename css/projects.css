@@ -1,0 +1,34 @@
+.container-projects {
+    display: block;
+    background-color: rgb(77, 77, 77);
+    color: white;
+    width: auto;
+}
+
+.container-projects .title {
+    width: 100%;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.project {
+    display: inline;
+    padding: 20px;
+
+}
+
+.armor {
+    border-radius: 5px;
+    background-color: rgba(39, 39, 39, 0.445);
+    box-shadow: 2px 2px 15px rgb(39, 39, 39);
+}
+
+

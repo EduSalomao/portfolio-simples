@@ -1,0 +1,49 @@
+footer {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    position: static;
+}
+
+/* ---------------------------------------------------------- */
+
+.container-footer {
+    color: white;
+    display: flex;
+    padding: 24px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/* ---------------------------------------------------------- */
+
+.contact {
+    width: 50%;
+}
+
+.contact a {
+}
+
+/* ---------------------------------------------------------- */
+
+.site-map {
+    width: 50%;
+    display: block;
+    list-style: none;
+}
+
+.site-map ul {
+    list-style: none;
+}
+
+/* ---------------------------------------------------------- */
+.copy {
+    color: white;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(36, 36, 36);
+}
+
+.copy p {
+    padding-left: 20px;
+}

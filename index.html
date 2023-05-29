@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Eduardo Salomão</title>
 
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menubar.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/profilepic.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/footer.css">
+
     <link rel="stylesheet" href="css/mobile/responsivemenubar.css">
 
     <script src="javascript/script.js" defer></script>
@@ -24,21 +28,21 @@
                 </button>
             </div>
             <div class="name">
-                <a href="index.html" type="internal" target="_self"><span>Eduardo Salomão</span></a>
+                <a href="#home"><span>Eduardo Salomão</span></a>
             </div>
             
             <div id="dropdownMenu" class="dropdown-menu">
                 <div class="options">
                     <div id="sidebarMenu" class="sidebar-menu">
-                        <a href="" type="internal" target="_self"><span>About</span></a>
-                        <a href="" type="internal" target="_self"><span>Tech</span></a>
-                        <a href="" type="internal" target="_self"><span>Social</span></a>
+                        <a href="#about" type="internal" target="_self"><span>About Me</span></a>
+                        <a href="#portfolio" type="internal" target="_self"><span>Portfolio</span></a>
+                        <a href="#footer" type="internal" target="_self"><span>Contact</span></a>
                     </div>
                     
                     <ul class="ul-options" id="menu">
-                        <li><a href="" type="internal" target="_self"><span>About</span></a></li>
-                        <li><a href="" type="internal" target="_self"><span>Tech</span></a></li>
-                        <li><a href="" type="internal" target="_self"><span>Social</span></a></li>
+                        <li><a href="#about"><span>About Me</span></a></li>
+                        <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                        <li><a href="#footer"><span>Contact</span></a></li>
                     </ul>
                     
                 </div>
@@ -52,10 +56,10 @@
         </div>
     </header>
 
-    <div class="container">
-        <main>
+    <main>
+        <div class="container">
             <section>
-                <div class="container-desc">
+                <div class="container-desc" id="home">
                     <canvas id="starCanvas"></canvas>
                     <div class="content-image">
                         <picture>
@@ -64,9 +68,9 @@
                     </div>
                     <div class="content-about">
                         <h1>Eduardo Salomão</h1>
-                        <span id="about">Student & Developer</span>
+                        <span>Student & Developer</span>
                     </div>
-
+    
                     <div class="social-medias">
                         <ul class="ul-options" id="social">
                             <li><abbr title="GitHub"><a href="https://github.com/EduSalomao" type="external" target="_blank"><img src="images/icons8-github-30.png" alt="Github icon"></a></abbr></li>
@@ -75,7 +79,94 @@
                     </div>
                 </div>
             </section>
-        </main>
-    </div>
+            <section>
+                <div class="container-about" id="about">
+                    <h1>Olá! Eu sou Eduardo Oliveira Salomão</h1>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur repellendus fugit assumenda ut optio dignissimos aliquid! Nemo alias accusantium ullam sunt, corrupti vitae quod atque pariatur, impedit dicta adipisci enim.</span>
+                </div>
+            </section>
+            <section>
+                <div class="container-projects" id="portfolio">
+                    <div class="title">
+                        <h1>My top projects</h1>
+                    </div>
+                    <div class="projects">
+                        <div class="project">
+                            <div class="armor">
+                                <div class="img">
+                                    IMG
+                                </div>
+                                <div class="title">
+                                    <h2>LOREM</h2>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi hic debitis tenetur explicabo labore! Praesentium quasi voluptatum perspiciatis corrupti veritatis harum? Similique, ipsam fugiat aut doloremque neque nihil! Deserunt, laboriosam.
+                                </div>
+                                <div class="link">
+                                    <a href="">VISIT WEBSITE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="armor">
+                                <div class="img">
+                                    IMG
+                                </div>
+                                <div class="title">
+                                    <h2>LOREM</h2>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi hic debitis tenetur explicabo labore! Praesentium quasi voluptatum perspiciatis corrupti veritatis harum? Similique, ipsam fugiat aut doloremque neque nihil! Deserunt, laboriosam.
+                                </div>
+                                <div class="link">
+                                    <a href="">VISIT WEBSITE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="armor">
+                                <div class="img">
+                                    IMG
+                                </div>
+                                <div class="title">
+                                    <h2>LOREM</h2>
+                                </div>
+                                <div class="desc">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi hic debitis tenetur explicabo labore! Praesentium quasi voluptatum perspiciatis corrupti veritatis harum? Similique, ipsam fugiat aut doloremque neque nihil! Deserunt, laboriosam.
+                                </div>
+                                <div class="link">
+                                    <a href="">VISIT WEBSITE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container-footer" id="footer">
+            <div class="contact">
+                <h1>Contact me</h1>
+                <span>
+                    Email: edusalomao33@gmail.com <br>
+                    Discord: duardo#6825<br>
+                    LinkedIn: <a href="https://www.linkedin.com/in/eduardo-oliveira-salomão-15347922a/">linkedin.com/in/eduardo-oliveira-salomão</a>
+                </span>
+            </div>
+            <div class="site-map">
+                <h1>Site map</h1>
+                <ul>
+                    <li><a href="">About me</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy">
+            <p>₢ 2023 Eduardo Oliveira Salomão</p>
+        </div>
+    </footer>
 </body>
 </html>

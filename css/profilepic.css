@@ -1,6 +1,5 @@
 .content-image {
     display: flex;
-    align-items: center;
     justify-content: center;
     padding-top: 150px;
     z-index: 1;
@@ -20,7 +19,7 @@
   }
   
 
-.content-image .image img {
+.content-image img {
     width: 150px;
     z-index: 1;
 }

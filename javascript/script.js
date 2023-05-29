@@ -100,3 +100,22 @@ function toggleMenu() {
 
  // Inicia a animação
  animate();
+
+ document.addEventListener('DOMContentLoaded', function() {
+  var links = document.querySelectorAll('.link-rolagem');
+
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var targetId = this.getAttribute('href');
+      var targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+});
