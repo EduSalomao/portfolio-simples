@@ -23,6 +23,8 @@ function toggleSwitch() {
 function toggleMenu() {
   var sidebarMenu = document.getElementById('sidebarMenu');
   sidebarMenu.classList.toggle('active');
+
+  
 }
   
 

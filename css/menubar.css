@@ -20,12 +20,11 @@ header {
     height: 60px;
     background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 1s ease;
-    z-index: 1;
+    z-index: 3;
 }
 
 header.opaque {
     background-color: #5F1EDE;
-    z-index: 2;
 }
 
 .ul-options a {
@@ -39,8 +38,7 @@ header.opaque {
     padding: 0;
     margin: 0;
     height: 64px;
-    opacity: 0.8;
-    box-shadow: 0 5px 12px rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
     text-shadow: 0 5px 10px rgb(0, 0, 0);
 }
 
@@ -185,18 +183,21 @@ header.opaque {
 /* Estilos para o menu dropdown */
 
 .sidebar-menu {
+    z-index: 2;
     display: none;
     position: fixed;
     top: 60px;
     left: -200px;
-    width: 150px;
+    width: 50%;
     height: 100%;
-    background-color: rgba(51, 47, 47, 0.692);
+    background-color: rgb(68, 66, 66);
     transition: left 0.3s ease-in-out;
 }
 
 .sidebar-menu.active {
     left: 0;
+    opacity: 1;
+    
 }
 
 .sidebar-menu a {

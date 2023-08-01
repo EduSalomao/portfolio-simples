@@ -38,6 +38,7 @@ footer {
 
 /* ---------------------------------------------------------- */
 .copy {
+    align-items: center;
     color: white;
     position: absolute;
     width: 100%;

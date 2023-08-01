@@ -2,12 +2,13 @@
     display: block;
     background-color: rgb(77, 77, 77);
     color: white;
-    width: auto;
+    width: 100%;
 }
 
 .container-projects .title {
     width: 100%;
     text-align: center;
+    padding-top: 30px;
 }
 
 .projects {
@@ -22,6 +23,8 @@
 .project {
     display: inline;
     padding: 20px;
+    max-width: 300px;
+    width: auto;
 
 }
 
@@ -31,4 +34,17 @@
     box-shadow: 2px 2px 15px rgb(39, 39, 39);
 }
 
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 150px;
+    overflow: hidden;
+}
 
+.img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Para preencher toda a div, mantendo a proporção */
+  }

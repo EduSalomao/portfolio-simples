@@ -1,4 +1,29 @@
 .container-about {
-    background-color: black;
+    display: block;
+    background-image: linear-gradient(#040620 , rgb(44, 44, 88));
     color: white;
+    border: 0px;
 }
+
+.apresentation, .description {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.apresentation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 40px;
+}
+
+.description {
+    display: flex;
+    height: 100%;
+    font-size: 18px;
+    padding-bottom: 80px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
